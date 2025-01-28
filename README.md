@@ -65,7 +65,7 @@ In order to do that, we will first convert our categorical columns into dummy va
 ![alt text](images/image-5.png)
 ![alt text](images/image-6.png)
 
-The correlation coefficient threshold was chosen based on what made sense when looking at the heat map.
+The correlation coefficient threshold (+_0.25) was chosen based on what made sense when looking at the heat map.
 Surprisingly, Cholesterol is not strongly correlated to HeartDisease. We can consider ignoring the feature for now.
 
 Given everything we have attempted so far, we can narrow down the features that might be relevant. These are:
@@ -75,6 +75,7 @@ Given everything we have attempted so far, we can narrow down the features that 
 - `MaxHR`
 - `ChestPainType_ATA`
 - `ST_Slope_Up`
+
 Next, we will create and train multiple models using all of these features.
 
 # Best Model results after hyperparameter tuning for each
